@@ -55,3 +55,12 @@ header nav {
 .flex {
   display: flex;
 }
+
+.form-group {
+  color: blue;
+  z-index: 7;
+  position: absolute;
+  display: flex;
+  z-index: 2; 
+
+}
