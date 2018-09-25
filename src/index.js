@@ -1,6 +1,5 @@
 const mapboxgl = require('mapbox-gl');
-const buildMarker = require("./marker")
-
+const buildMarker = require('./marker');
 
 mapboxgl.accessToken =
   'pk.eyJ1Ijoic2FjcmV1dHoiLCJhIjoiY2ptaTR3ZjZqMDBoaDNwbXdmdjVwMDFwdSJ9.rLvTG-ak5P1E9lK4KtxOKA';
@@ -21,7 +20,15 @@ new mapboxgl.Marker(markerDomEl)
   .addTo(map)
   .setDraggable(true); // [-87.641, 41.895] for Chicago
 
-  const buildMarkerOne = buildMarker('hotels', [-87.641, 41.896])
-  buildMarkerOne.addTo(map)
+buildMarker('hotels', [-87.641, 41.896]).addTo(map);
+buildMarker('restaurants', [-87.634, 41.896]).addTo(map);
+// const buildMarkerTwo = buildMarker('restaurants', [-87.641, 42]).addTo(map);
+// const buildMarkerThree = buildMarker('activities', [-84.641, 41.596]).addTo(
+//   map
+// );
 
-console.log(buildMarkerOne)
+//buildMarkerOne.addTo(map)
+
+// console.log(buildMarkerOne);
+// console.log(buildMarkerTwo);
+// console.log(buildMarkerThree);
