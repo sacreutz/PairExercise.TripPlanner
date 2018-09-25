@@ -9,6 +9,7 @@ body {
 }
 #stuff {
   display: flex;
+
 }
 
 #map {
@@ -20,7 +21,16 @@ body {
 #forms {
   padding: 40px 10px 10px 10px;
   flex: 1;
+  height: 300px;
   background-color: blue;
+
+
+}
+
+.col-sm-2  {
+  align: center;
+  padding: 0px, 500px, 700px, 0px;
+
 }
 
 #itinerary {
