@@ -12,3 +12,46 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+#stuff {
+}
+
+#itinerary {
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  color: #fff;
+  background-color: limegreen;
+  z-index: 2;
+}
+
+header nav {
+  display: flex;
+}
+
+.nav-item {
+  height: 1.5em;
+  margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+.nav-item a:hover {
+  color: #202b47;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: #d3d3d3;
+}
+
+/* Basic Flex Constructs */
+
+.flex {
+  display: flex;
+}
