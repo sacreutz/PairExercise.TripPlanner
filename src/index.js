@@ -1,7 +1,9 @@
 const mapboxgl = require('mapbox-gl');
+const buildMarker = require("./marker")
+
 
 mapboxgl.accessToken =
-  'pk.eyJ1IjoianJ5ZXIiLCJhIjoiY2ptaTRhYnB3MDEydzNwcWxjN3B3ZXlxbCJ9.KGqie_d0ApaRHv6NQZNkhg';
+  'pk.eyJ1Ijoic2FjcmV1dHoiLCJhIjoiY2ptaTR3ZjZqMDBoaDNwbXdmdjVwMDFwdSJ9.rLvTG-ak5P1E9lK4KtxOKA';
 
 const map = new mapboxgl.Map({
   container: 'map',
@@ -18,3 +20,8 @@ new mapboxgl.Marker(markerDomEl)
   .setLngLat([-87.641, 41.895])
   .addTo(map)
   .setDraggable(true); // [-87.641, 41.895] for Chicago
+
+  const buildMarkerOne = buildMarker('hotels', [-87.641, 41.896])
+  buildMarkerOne.addTo(map)
+
+console.log(buildMarkerOne)
